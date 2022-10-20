@@ -10,10 +10,10 @@ A collection of themes I made for the Stylus Extension
 
 <br>
 
-- YouTube Rainbow Progress Bar [[Install Theme]](https://github.com/MiahFuta/StylusThemes/raw/main/YouTubeRainbowProgressBar/youtube-rainbow-progress-bar.user.css)
+- YouTube Rainbow Progress Bar [[Install Theme]](https://raw.githubusercontent.com/MiahFuta/StylusThemes/main/YouTubeRainbowProgressBar/youtube-rainbow-progress-bar.user.css)
   - Makes the progress bar for videos on YouTube have a rainbow effect
 
-- YouTube Watched Hider [[Install Theme]](https://github.com/MiahFuta/StylusThemes/raw/main/YouTubeWatchedHider/youtube-watched-hider.user.css)
+- YouTube Watched Hider [[Install Theme]](https://raw.githubusercontent.com/MiahFuta/StylusThemes/main/YouTubeWatchedHider/youtube-watched-hider.user.css)
   - Hides videos that you've already watched on YouTube  
 
 <br>
