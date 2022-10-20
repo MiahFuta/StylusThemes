@@ -3,6 +3,8 @@
 <br>
 
 A collection of themes I made for the Stylus Extension  
+  
+- Do you like my work? [Support Me on Patreon](https://www.patreon.com/miahfuta)
 
 <br>
 
