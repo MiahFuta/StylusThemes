@@ -4,7 +4,7 @@
 @author         MiahFuta (https://www.patreon.com/miahfuta)
 @description    Hides videos that you've already watched on YouTube
 @updateURL      https://raw.githubusercontent.com/MiahFuta/StylusThemes/main/YouTubeWatchedHider/youtube-watched-hider.user.css
-@version        1.0.3
+@version        1.0.4
 @license        GPL-3.0-only
 @preprocessor   stylus
 @var    checkbox    vidHide      "Completly Hide Watched Videos"     1
@@ -44,6 +44,15 @@
             
         }
         
+    }
+    
+}
+
+@-moz-document url("https://www.youtube.com/feed/history") {
+    
+    ytd-video-renderer.ytd-item-section-renderer:has(#progress.ytd-thumbnail-overlay-resume-playback-renderer) {
+        display: block !important;
+        opacity: 1 !important;
     }
     
 }
