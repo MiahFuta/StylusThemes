@@ -3,8 +3,8 @@
 @namespace      https://www.miahfuta.com
 @author         MiahFuta (https://www.patreon.com/miahfuta)
 @description    Hides videos that you've already watched on YouTube
-@updateURL      https://raw.githubusercontent.com/MiahFuta/StylusThemes/main/YouTubeWatchedHider/youtube-watched-hider.user.css
-@version        1.0.2
+@updateURL      https://github.com/MiahFuta/StylusThemes/raw/main/YouTubeWatchedHider/youtube-watched-hider.user.css
+@version        1.0.3
 @license        GPL-3.0-only
 @preprocessor   stylus
 @var    checkbox    vidHide      "Completly Hide Watched Videos"     1
