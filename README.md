@@ -1,5 +1,5 @@
-# Stylus Styles
-A collection of styles I made for the Stylus Extension
+# Stylus Themes
+A collection of themes I made for the Stylus Extension
 
 # Requirements
 
