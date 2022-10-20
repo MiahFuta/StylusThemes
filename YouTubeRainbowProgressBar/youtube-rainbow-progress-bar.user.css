@@ -1,0 +1,139 @@
+/* ==UserStyle==
+@name           YouTube Rainbow Progress Bar
+@namespace      https://www.miahfuta.com
+@author         MiahFuta (https://www.patreon.com/miahfuta)
+@description    Makes the progress bar for videos have a rainbow effect
+@updateURL      https://github.com/MiahFuta/StylusStyles/raw/main/YouTubeRainbowProgressBar/youtube-rainbow-progress-bar.user.css
+@version        1.0.0
+@license        GPL-3.0-only
+@preprocessor   stylus
+@var    checkbox    progressFlag           "Rainbow Progress Bar"       1
+@var    checkbox    heatmapFlag            "Rainbow Heat Map"           1
+@var    color       heatmapColor           "Heat Map Basic Color"       #ffffff
+@var    number      heatmapOpacity         "Heat Map Opacity Level"     [0.5, 0, 1, 0.1]
+@var    color       color1                 "Custom Color 1"             #f80d1b
+@var    color       color2                 "Custom Color 2"             #ffa000
+@var    color       color3                 "Custom Color 3"             #ffe302
+@var    color       color4                 "Custom Color 4"             #00fa22
+@var    color       color5                 "Custom Color 5"             #00a9ee
+@var    color       color6                 "Custom Color 6"             #9f00ff
+@var    checkbox    scrubberFlag           "Scrubber Custom Color"      1
+@var    color       scrubberColor          "Scrubber Button Color"      #9f00ff
+@var    checkbox    scrubberOutlineFlag    "Scrubber Custom Outline"    1
+@var    color       scrubberOutline        "Scrubber Outline Color"     #000000
+==/UserStyle== */
+
+@-moz-document domain("youtube.com") {
+    
+    if progressFlag {
+        
+        .html5-play-progress,
+        .ytp-play-progress {
+            background: linear-gradient(90deg, color1 0%, color2 20%, color3 40%, color4 60%, color5 80%, color6 100%) !important;
+            height: 12px !important;
+            border: none !important;
+        }
+        
+        .html5-progress-bar-container,
+        .ytp-progress-bar-container {
+            height: 12px !important;
+        }
+        
+        .html5-progress-bar,
+        .ytp-progress-bar {
+            margin-top: 12px !important;
+        }
+        
+        .html5-progress-list,
+        .ytp-progress-list,
+        .video-ads .html5-progress-list.html5-ad-progress-list,
+        .video-ads .ytp-progress-list.ytp-ad-progress-list {
+            height: 12px !important;
+        }
+        
+    }
+    
+    .ytp-scrubber-button {
+        if scrubberFlag {
+            background-color: scrubberColor !important;
+        }
+        if scrubberOutlineFlag {
+            border: 1px solid scrubberOutline !important;   
+        }
+        if progressFlag {
+            height: 32px !important;
+            margin-top: -6px !important;
+        } else {
+            height: 22px !important;
+            margin-top: -4px !important;
+        }
+        width: 8px !important;
+        margin-left: 0px !important;
+    }
+
+
+    .ytp-heat-map-svg {
+        if progressFlag {
+            margin-top: 3px !important;
+        } else {
+            margin-top: 10px !important;
+        }
+    }
+    
+    .ytp-heat-map-container {
+        height: 50px !important;
+    }
+    
+    .ytp-heat-map-graph {
+        if heatmapFlag {
+            -webkit-animation: aniHeatMap 5s linear infinite;
+            -moz-animation: aniHeatMap 5s linear infinite;
+            animation: aniHeatMap 5s linear infinite;
+        } else {
+            fill: heatmapColor;
+        }
+        fill-opacity: heatmapOpacity !important;
+    }
+    
+    @keyframes aniHeatMap {
+        0% { fill: color1; }
+        10% { fill: color2; }
+        20% { fill: color3; }
+        30% { fill: color4; }
+        40% { fill: color5; }
+        50% { fill: color6; }
+        60% { fill: color5; }
+        70% { fill: color4; }
+        80% { fill: color3; }
+        90% { fill: color2; }
+        100% { fill: color1; }
+    }
+        
+}
+
+
+
+/********************************************************************************************************************************************************************************/
+/*                                                                                                                                                                              */
+/*     MMMMMMMM               MMMMMMMM   iiii                     hhhhhhh              FFFFFFFFFFFFFFFFFFFFFF                            tttt                                   */
+/*     M:::::::M             M:::::::M  i::::i                    h:::::h              F::::::::::::::::::::F                         ttt:::t                                   */
+/*     M::::::::M           M::::::::M   iiii                     h:::::h              F::::::::::::::::::::F                         t:::::t                                   */
+/*     M:::::::::M         M:::::::::M                            h:::::h              FF::::::FFFFFFFFF::::F                         t:::::t                                   */
+/*     M::::::::::M       M::::::::::M iiiiiii    aaaaaaaaaaaaa    h::::h hhhhh          F:::::F       FFFFFF uuuuuu    uuuuuu  ttttttt:::::ttttttt       aaaaaaaaaaaaa         */
+/*     M:::::::::::M     M:::::::::::M i:::::i    a::::::::::::a   h::::hh:::::hhh       F:::::F              u::::u    u::::u  t:::::::::::::::::t       a::::::::::::a        */
+/*     M:::::::M::::M   M::::M:::::::M  i::::i    aaaaaaaaa:::::a  h::::::::::::::hh     F::::::FFFFFFFFFF    u::::u    u::::u  t:::::::::::::::::t       aaaaaaaaa:::::a       */
+/*     M::::::M M::::M M::::M M::::::M  i::::i             a::::a  h:::::::hhh::::::h    F:::::::::::::::F    u::::u    u::::u  tttttt:::::::tttttt                a::::a       */
+/*     M::::::M  M::::M::::M  M::::::M  i::::i      aaaaaaa:::::a  h::::::h   h::::::h   F:::::::::::::::F    u::::u    u::::u        t:::::t               aaaaaaa:::::a       */
+/*     M::::::M   M:::::::M   M::::::M  i::::i    aa::::::::::::a  h:::::h     h:::::h   F::::::FFFFFFFFFF    u::::u    u::::u        t:::::t             aa::::::::::::a       */
+/*     M::::::M    M:::::M    M::::::M  i::::i   a::::aaaa::::::a  h:::::h     h:::::h   F:::::F              u::::u    u::::u        t:::::t            a::::aaaa::::::a       */
+/*     M::::::M     MMMMM     M::::::M  i::::i  a::::a    a:::::a  h:::::h     h:::::h   F:::::F              u:::::uuuu:::::u        t:::::t    tttttt a::::a    a:::::a       */
+/*     M::::::M               M::::::M i::::::i a::::a    a:::::a  h:::::h     h:::::h FF:::::::FF            u:::::::::::::::uu      t::::::tttt:::::t a::::a    a:::::a       */
+/*     M::::::M               M::::::M i::::::i a:::::aaaa::::::a  h:::::h     h:::::h F::::::::FF             u:::::::::::::::u      tt::::::::::::::t a:::::aaaa::::::a       */
+/*     M::::::M               M::::::M i::::::i  a::::::::::aa:::a h:::::h     h:::::h F::::::::FF              uu::::::::uu:::u        tt:::::::::::tt  a::::::::::aa:::a      */
+/*     MMMMMMMM               MMMMMMMM iiiiiiii   aaaaaaaaaa  aaaa hhhhhhh     hhhhhhh FFFFFFFFFFF                uuuuuuuu  uuuu          ttttttttttt     aaaaaaaaaa  aaaa      */
+/*                                                                                                                                                                              */
+/********************************************************************************************************************************************************************************/
+/*                                                                                                                                                                              */
+/*                                                                          © MiahFuta Inc. 2022 All Rights Reserved.                                                           */
+/*                                                                                                                                                                              */
+/********************************************************************************************************************************************************************************/
