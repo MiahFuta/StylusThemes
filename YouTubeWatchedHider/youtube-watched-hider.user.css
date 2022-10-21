@@ -8,7 +8,7 @@
 @license        GPL-3.0-only
 @preprocessor   stylus
 @var    checkbox    vidHide      "Completly Hide Watched Videos"     1
-@var    number      vidOpacity   "Watched Thumbnail Opacity"         [0.2, 0, 1, 0.1]
+@var    number      vidOpacity   "Watched Thumbnail Opacity"         [0.2, 0.1, 1, 0.1]
 ==/UserStyle== */
 @-moz-document domain("youtube.com") {
     
@@ -20,6 +20,10 @@
     
     ytd-video-renderer.ytd-item-section-renderer:has(#progress.ytd-thumbnail-overlay-resume-playback-renderer),
     
+    /* Video Page Recommended */
+
+    ytd-compact-video-renderer.ytd-item-section-renderer:has(#progress.ytd-thumbnail-overlay-resume-playback-renderer),
+
     /* Channel Page */
 
     #items.yt-horizontal-list-renderer>*.yt-horizontal-list-renderer:has(#progress.ytd-thumbnail-overlay-resume-playback-renderer), 
@@ -30,11 +34,7 @@
  
     /* Trending Feed */
     
-    #grid-container.ytd-expanded-shelf-contents-renderer>*.ytd-expanded-shelf-contents-renderer:has(#progress.ytd-thumbnail-overlay-resume-playback-renderer),
-    
-    /* Video Page Recommended */
-
-    ytd-compact-video-renderer.ytd-item-section-renderer:has(#progress.ytd-thumbnail-overlay-resume-playback-renderer)
+    #grid-container.ytd-expanded-shelf-contents-renderer>*.ytd-expanded-shelf-contents-renderer:has(#progress.ytd-thumbnail-overlay-resume-playback-renderer)
 
     {
         
@@ -52,11 +52,15 @@
     
 }
 
+/* Lazy Disable Fix for Watch History Page */
+
 @-moz-document url("https://www.youtube.com/feed/history") {
     
     ytd-video-renderer.ytd-item-section-renderer:has(#progress.ytd-thumbnail-overlay-resume-playback-renderer) {
+
         display: block !important;
         opacity: 1 !important;
+
     }
     
 }

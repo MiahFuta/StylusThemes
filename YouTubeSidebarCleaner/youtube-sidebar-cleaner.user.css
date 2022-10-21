@@ -1,0 +1,294 @@
+/* ==UserStyle==
+@name           YouTube Sidebar Cleaner
+@namespace      https://www.miahfuta.com
+@author         MiahFuta (https://www.patreon.com/miahfuta)
+@description    Removes the unnecessary nonsense from the YouTube Side Bar
+@updateURL      https://raw.githubusercontent.com/MiahFuta/StylusThemes/main/YouTubeSidebarCleaner/youtube-sidebar-cleaner.user.css
+@version        1.0.0
+@license        GPL-3.0-only
+@preprocessor   stylus
+@var    checkbox    removeTopTags            "Remove Tags Under Searchbar"       1
+@var    checkbox    removeHome               "Remove Home"                       0
+@var    checkbox    removeShorts             "Remove Shorts"                     1
+@var    checkbox    removeSubscriptions      "Remove Subscriptions"              0
+@var    checkbox    removeLibrary            "Remove Library"                    1
+@var    checkbox    removeHistory            "Remove History"                    0
+@var    checkbox    removeYourVideos         "Remove Your Videos"                1
+@var    checkbox    removeWatchLater         "Remove Watch Later"                1
+@var    checkbox    removeLikedVideos        "Remove Liked Videos"               1
+@var    checkbox    removeShowMore           "Remove Show More"                  1
+@var    checkbox    removeSubsSection        "Remove Subscriptions Section"      0
+@var    checkbox    removeSubsLabel          "Remove Subscriptions Label"        1
+@var    checkbox    removeExplore            "Remove Explore Section"            0
+@var    checkbox    removeExploreLabel       "Remove Explore Label"              1
+@var    checkbox    removeTrending           "Remove Trending"                   0
+@var    checkbox    removeMusic              "Remove Music"                      1
+@var    checkbox    removeMovies             "Remove Movies & Shows"             1
+@var    checkbox    removeLive               "Remove Live"                       1
+@var    checkbox    removeGaming             "Remove Gaming"                     1
+@var    checkbox    removeNews               "Remove News"                       1
+@var    checkbox    removeSports             "Remove Sports"                     1
+@var    checkbox    removeLearning           "Remove Learning"                   1
+@var    checkbox    removeFashion            "Remove Fashion & Beauty"           1
+@var    checkbox    removePodcasts           "Remove Podcasts"                   1
+@var    checkbox    removeMoreFromYT         "Remove More From YouTube Section"  0
+@var    checkbox    removeMoreFromYTLabel    "Remove More From YouTube Label"    1
+@var    checkbox    removeYTPremium          "Remove YouTube Premium"            1
+@var    checkbox    removeCreatorStudio      "Remove Creator Studio"             0
+@var    checkbox    removeYTMusic            "Remove YouTube Music"              1
+@var    checkbox    removeYTKids             "Remove YouTube Kids"               1
+@var    checkbox    removeYTTV               "Remove YouTube TV"                 1
+@var    checkbox    removeSettingsSection    "Remove Settings Section"           0
+@var    checkbox    removeSettings           "Remove Settings"                   0
+@var    checkbox    removeReportHistory      "Remove Report History"             1
+@var    checkbox    removeHelp               "Remove Help"                       1
+@var    checkbox    removeSendFeedback       "Remove Send Feedback"              1
+@var    checkbox    removeAboutSection       "Remove About Links Section"        1
+==/UserStyle== */
+
+@-moz-document domain("www.youtube.com") {
+    
+    
+    /* Tags Under Search */
+
+    if removeTopTags {
+        #header.ytd-rich-grid-renderer {
+            display: none !important;
+        }
+    }
+    
+    /* Home Section */
+    
+    if removeHome {
+        #sections ytd-guide-entry-renderer:has(a[title="Home"]) {
+            display: none !important;
+        }
+    }
+    if removeShorts {
+        #sections ytd-guide-entry-renderer:has(a[title="Shorts"]) {
+            display: none !important;
+        }
+    }
+    if removeSubscriptions {
+        #sections ytd-guide-entry-renderer:has(a[title="Subscriptions"]) {
+            display: none !important;
+        }
+    }
+    
+    /* Library Section */
+    
+    if removeLibrary {
+        #sections ytd-guide-entry-renderer:has(a[title="Library"]) {
+            display: none !important;
+        }
+    }
+    if removeHistory {
+        #sections ytd-guide-entry-renderer:has(a[title="History"]) {
+            display: none !important;
+        }
+    }
+    if removeYourVideos {
+        #sections ytd-guide-entry-renderer:has(a[title="Your videos"]) {
+            display: none !important;
+        }
+    }
+    if removeWatchLater {
+        #sections ytd-guide-entry-renderer:has(a[title="Watch later"]) {
+            display: none !important;
+        }
+    }
+    if removeLikedVideos {
+        #sections ytd-guide-entry-renderer:has(a[title="Liked videos"]) {
+            display: none !important;
+        }
+    }
+    if removeShowMore {
+        #sections ytd-guide-entry-renderer:has(a[title="Show more"]) {
+            display: none !important;
+        }
+    }
+    
+    
+    /* Subscriptions Section */
+    
+    if removeSubsSection {
+        #sections ytd-guide-section-renderer:nth-of-type(2) {
+            display: none !important;
+        }
+    }
+    
+    if removeSubsLabel {
+        #sections ytd-guide-section-renderer:nth-of-type(2) #guide-section-title {
+            display: none !important;
+        }
+    }
+    
+    
+    /* Explore Section */
+
+    if removeExplore {
+        #sections ytd-guide-section-renderer:nth-of-type(3) {
+            display: none;
+        }
+    }
+    
+    if removeExploreLabel {
+        #sections ytd-guide-section-renderer:nth-of-type(3) #guide-section-title {
+            display: none;
+        }
+    }
+
+    if removeTrending {
+        #sections ytd-guide-entry-renderer:has(a[title="Trending"]) {
+            display: none !important;
+        }
+    }
+    if removeMusic {
+        #sections ytd-guide-entry-renderer:has(a[title="Music"]) {
+            display: none !important;
+        }
+    }
+    if removeMovies {
+        #sections ytd-guide-entry-renderer:has(a[title="Movies \& Shows"]) {
+            display: none !important;
+        }
+    }
+    if removeLive {
+        #sections ytd-guide-entry-renderer:has(a[title="Live"]) {
+            display: none !important;
+        }
+    }
+    if removeGaming {
+        #sections ytd-guide-entry-renderer:has(a[title="Gaming"]) {
+            display: none !important;
+        }
+    }
+    if removeNews {
+        #sections ytd-guide-entry-renderer:has(a[title="News"]) {
+            display: none !important;
+        }
+    }
+    if removeSports {
+        #sections ytd-guide-entry-renderer:has(a[title="Sports"]) {
+            display: none !important;
+        }
+    }
+    if removeLearning {
+        #sections ytd-guide-entry-renderer:has(a[title="Learning"]) {
+            display: none !important;
+        }
+    }
+    if removeFashion {
+        #sections ytd-guide-entry-renderer:has(a[title="Fashion \& Beauty"]) {
+            display: none !important;
+        }
+    }
+    if removePodcasts {
+        #sections ytd-guide-entry-renderer:has(a[title="Podcasts"]) {
+            display: none !important;
+        }
+    }
+
+    /* More From YouTube Section */
+
+    if removeMoreFromYT {
+        #sections ytd-guide-section-renderer:nth-of-type(4) {
+            display: none !important;
+        }
+    }
+    if removeMoreFromYTLabel {
+        #sections ytd-guide-section-renderer:nth-of-type(4) #guide-section-title {
+            display: none !important;
+        }
+    }
+    if removeYTPremium {
+        #sections ytd-guide-entry-renderer:has(a[title="YouTube Premium"]) {
+            display: none !important;
+        }
+    }
+    if removeCreatorStudio {
+        #sections ytd-guide-entry-renderer:has(a[title="Creator Studio"]) {
+            display: none !important;
+        }
+    }
+    if removeYTMusic {
+        #sections ytd-guide-entry-renderer:has(a[title="YouTube Music"]) {
+            display: none !important;
+        }
+    }
+    if removeYTKids {
+        #sections ytd-guide-entry-renderer:has(a[title="YouTube Kids"]) {
+            display: none !important;
+        }
+    }
+    if removeYTTV {
+        #sections ytd-guide-entry-renderer:has(a[title="YouTube TV"]) {
+            display: none !important;
+        }
+    }
+    
+    /* Settings Section */
+
+    if removeSettingsSection {
+        #sections ytd-guide-section-renderer:nth-of-type(5) {
+            display: none !important;
+        }
+    }
+    
+    if removeSettings {
+        #sections ytd-guide-entry-renderer:has(a[title="Settings"]) {
+            display: none !important;
+        }
+    }
+    if removeReportHistory {
+        #sections ytd-guide-entry-renderer:has(a[title="Report history"]) {
+            display: none !important;
+        }
+    }
+    if removeHelp {
+        #sections ytd-guide-entry-renderer:has(a[title="Help"]) {
+            display: none !important;
+        }
+    }
+    if removeSendFeedback {
+        #sections ytd-guide-entry-renderer:has(a[title="Send feedback"]) {
+            display: none !important;
+        }
+    }
+
+    /* Settings Section */
+
+    if removeAboutSection {
+        #footer {
+            display: none !important;
+        }
+    }
+
+}
+
+
+
+/********************************************************************************************************************************************************************************/
+/*                                                                                                                                                                              */
+/*     MMMMMMMM               MMMMMMMM   iiii                     hhhhhhh              FFFFFFFFFFFFFFFFFFFFFF                            tttt                                   */
+/*     M:::::::M             M:::::::M  i::::i                    h:::::h              F::::::::::::::::::::F                         ttt:::t                                   */
+/*     M::::::::M           M::::::::M   iiii                     h:::::h              F::::::::::::::::::::F                         t:::::t                                   */
+/*     M:::::::::M         M:::::::::M                            h:::::h              FF::::::FFFFFFFFF::::F                         t:::::t                                   */
+/*     M::::::::::M       M::::::::::M iiiiiii    aaaaaaaaaaaaa    h::::h hhhhh          F:::::F       FFFFFF uuuuuu    uuuuuu  ttttttt:::::ttttttt       aaaaaaaaaaaaa         */
+/*     M:::::::::::M     M:::::::::::M i:::::i    a::::::::::::a   h::::hh:::::hhh       F:::::F              u::::u    u::::u  t:::::::::::::::::t       a::::::::::::a        */
+/*     M:::::::M::::M   M::::M:::::::M  i::::i    aaaaaaaaa:::::a  h::::::::::::::hh     F::::::FFFFFFFFFF    u::::u    u::::u  t:::::::::::::::::t       aaaaaaaaa:::::a       */
+/*     M::::::M M::::M M::::M M::::::M  i::::i             a::::a  h:::::::hhh::::::h    F:::::::::::::::F    u::::u    u::::u  tttttt:::::::tttttt                a::::a       */
+/*     M::::::M  M::::M::::M  M::::::M  i::::i      aaaaaaa:::::a  h::::::h   h::::::h   F:::::::::::::::F    u::::u    u::::u        t:::::t               aaaaaaa:::::a       */
+/*     M::::::M   M:::::::M   M::::::M  i::::i    aa::::::::::::a  h:::::h     h:::::h   F::::::FFFFFFFFFF    u::::u    u::::u        t:::::t             aa::::::::::::a       */
+/*     M::::::M    M:::::M    M::::::M  i::::i   a::::aaaa::::::a  h:::::h     h:::::h   F:::::F              u::::u    u::::u        t:::::t            a::::aaaa::::::a       */
+/*     M::::::M     MMMMM     M::::::M  i::::i  a::::a    a:::::a  h:::::h     h:::::h   F:::::F              u:::::uuuu:::::u        t:::::t    tttttt a::::a    a:::::a       */
+/*     M::::::M               M::::::M i::::::i a::::a    a:::::a  h:::::h     h:::::h FF:::::::FF            u:::::::::::::::uu      t::::::tttt:::::t a::::a    a:::::a       */
+/*     M::::::M               M::::::M i::::::i a:::::aaaa::::::a  h:::::h     h:::::h F::::::::FF             u:::::::::::::::u      tt::::::::::::::t a:::::aaaa::::::a       */
+/*     M::::::M               M::::::M i::::::i  a::::::::::aa:::a h:::::h     h:::::h F::::::::FF              uu::::::::uu:::u        tt:::::::::::tt  a::::::::::aa:::a      */
+/*     MMMMMMMM               MMMMMMMM iiiiiiii   aaaaaaaaaa  aaaa hhhhhhh     hhhhhhh FFFFFFFFFFF                uuuuuuuu  uuuu          ttttttttttt     aaaaaaaaaa  aaaa      */
+/*                                                                                                                                                                              */
+/********************************************************************************************************************************************************************************/
+/*                                                                                                                                                                              */
+/*                                                                          © MiahFuta Inc. 2022 All Rights Reserved.                                                           */
+/*                                                                                                                                                                              */
+/********************************************************************************************************************************************************************************/
