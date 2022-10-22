@@ -9,7 +9,7 @@
 @preprocessor   stylus
 @var    checkbox    vidWatched   "Show Watched Label"                 1
 @var    checkbox    vidHide      "Completely Hide Watched Videos"     0
-@var    number      vidOpacity   "Watched Thumbnail Opacity"          [0.1, 0.1, 1, 0.1]
+@var    number      vidOpacity   "Watched Thumbnail Opacity"          [0.3, 0.1, 1, 0.1]
 ==/UserStyle== */
 @-moz-document domain("youtube.com") {
     
