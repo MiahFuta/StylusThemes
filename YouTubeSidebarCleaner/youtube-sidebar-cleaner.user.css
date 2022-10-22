@@ -52,7 +52,7 @@
     /* Tags Under Search */
 
     if removeTopTags {
-        #header.ytd-rich-grid-renderer {
+        #header ytd-feed-filter-chip-bar-renderer {
             display: none !important;
         }
     }
@@ -60,17 +60,17 @@
     /* Home Section */
     
     if removeHome {
-        #sections ytd-guide-entry-renderer:has(a[title="Home"]) {
+        ytd-guide-renderer #sections ytd-guide-entry-renderer:has(a[title="Home"]) {
             display: none !important;
         }
     }
     if removeShorts {
-        #sections ytd-guide-entry-renderer:has(a[title="Shorts"]) {
+        ytd-guide-renderer #sections ytd-guide-entry-renderer:has(a[title="Shorts"]) {
             display: none !important;
         }
     }
     if removeSubscriptions {
-        #sections ytd-guide-entry-renderer:has(a[title="Subscriptions"]) {
+        ytd-guide-renderer #sections ytd-guide-entry-renderer:has(a[title="Subscriptions"]) {
             display: none !important;
         }
     }
@@ -78,32 +78,32 @@
     /* Library Section */
     
     if removeLibrary {
-        #sections ytd-guide-entry-renderer:has(a[title="Library"]) {
+        ytd-guide-renderer #sections ytd-guide-entry-renderer:has(a[title="Library"]) {
             display: none !important;
         }
     }
     if removeHistory {
-        #sections ytd-guide-entry-renderer:has(a[title="History"]) {
+        ytd-guide-renderer #sections ytd-guide-entry-renderer:has(a[title="History"]) {
             display: none !important;
         }
     }
     if removeYourVideos {
-        #sections ytd-guide-entry-renderer:has(a[title="Your videos"]) {
+        ytd-guide-renderer #sections ytd-guide-entry-renderer:has(a[title="Your videos"]) {
             display: none !important;
         }
     }
     if removeWatchLater {
-        #sections ytd-guide-entry-renderer:has(a[title="Watch later"]) {
+        ytd-guide-renderer #sections ytd-guide-entry-renderer:has(a[title="Watch later"]) {
             display: none !important;
         }
     }
     if removeLikedVideos {
-        #sections ytd-guide-entry-renderer:has(a[title="Liked videos"]) {
+        ytd-guide-renderer #sections ytd-guide-entry-renderer:has(a[title="Liked videos"]) {
             display: none !important;
         }
     }
     if removeShowMore {
-        #sections ytd-guide-entry-renderer:has(a[title="Show more"]) {
+        ytd-guide-renderer #sections ytd-guide-entry-renderer:has(a[title="Show more"]) {
             display: none !important;
         }
     }
@@ -112,13 +112,13 @@
     /* Subscriptions Section */
     
     if removeSubsSection {
-        #sections ytd-guide-section-renderer:nth-of-type(2) {
+        ytd-guide-renderer #sections ytd-guide-section-renderer:nth-of-type(2) {
             display: none !important;
         }
     }
     
     if removeSubsLabel {
-        #sections ytd-guide-section-renderer:nth-of-type(2) #guide-section-title {
+        ytd-guide-renderer #sections ytd-guide-section-renderer:nth-of-type(2) #guide-section-title {
             display: none !important;
         }
     }
@@ -127,64 +127,64 @@
     /* Explore Section */
 
     if removeExplore {
-        #sections ytd-guide-section-renderer:nth-of-type(3) {
+        ytd-guide-renderer #sections ytd-guide-section-renderer:nth-of-type(3) {
             display: none;
         }
     }
     
     if removeExploreLabel {
-        #sections ytd-guide-section-renderer:nth-of-type(3) #guide-section-title {
+        ytd-guide-renderer #sections ytd-guide-section-renderer:nth-of-type(3) #guide-section-title {
             display: none;
         }
     }
 
     if removeTrending {
-        #sections ytd-guide-entry-renderer:has(a[title="Trending"]) {
+        ytd-guide-renderer #sections ytd-guide-entry-renderer:has(a[title="Trending"]) {
             display: none !important;
         }
     }
     if removeMusic {
-        #sections ytd-guide-entry-renderer:has(a[title="Music"]) {
+        ytd-guide-renderer #sections ytd-guide-entry-renderer:has(a[title="Music"]) {
             display: none !important;
         }
     }
     if removeMovies {
-        #sections ytd-guide-entry-renderer:has(a[title="Movies \& Shows"]) {
+        ytd-guide-renderer #sections ytd-guide-entry-renderer:has(a[title="Movies \& Shows"]) {
             display: none !important;
         }
     }
     if removeLive {
-        #sections ytd-guide-entry-renderer:has(a[title="Live"]) {
+        ytd-guide-renderer #sections ytd-guide-entry-renderer:has(a[title="Live"]) {
             display: none !important;
         }
     }
     if removeGaming {
-        #sections ytd-guide-entry-renderer:has(a[title="Gaming"]) {
+        ytd-guide-renderer #sections ytd-guide-entry-renderer:has(a[title="Gaming"]) {
             display: none !important;
         }
     }
     if removeNews {
-        #sections ytd-guide-entry-renderer:has(a[title="News"]) {
+        ytd-guide-renderer #sections ytd-guide-entry-renderer:has(a[title="News"]) {
             display: none !important;
         }
     }
     if removeSports {
-        #sections ytd-guide-entry-renderer:has(a[title="Sports"]) {
+        ytd-guide-renderer #sections ytd-guide-entry-renderer:has(a[title="Sports"]) {
             display: none !important;
         }
     }
     if removeLearning {
-        #sections ytd-guide-entry-renderer:has(a[title="Learning"]) {
+        ytd-guide-renderer #sections ytd-guide-entry-renderer:has(a[title="Learning"]) {
             display: none !important;
         }
     }
     if removeFashion {
-        #sections ytd-guide-entry-renderer:has(a[title="Fashion \& Beauty"]) {
+        ytd-guide-renderer #sections ytd-guide-entry-renderer:has(a[title="Fashion \& Beauty"]) {
             display: none !important;
         }
     }
     if removePodcasts {
-        #sections ytd-guide-entry-renderer:has(a[title="Podcasts"]) {
+        ytd-guide-renderer #sections ytd-guide-entry-renderer:has(a[title="Podcasts"]) {
             display: none !important;
         }
     }
@@ -192,37 +192,37 @@
     /* More From YouTube Section */
 
     if removeMoreFromYT {
-        #sections ytd-guide-section-renderer:nth-of-type(4) {
+        ytd-guide-renderer #sections ytd-guide-section-renderer:nth-of-type(4) {
             display: none !important;
         }
     }
     if removeMoreFromYTLabel {
-        #sections ytd-guide-section-renderer:nth-of-type(4) #guide-section-title {
+        ytd-guide-renderer #sections ytd-guide-section-renderer:nth-of-type(4) #guide-section-title {
             display: none !important;
         }
     }
     if removeYTPremium {
-        #sections ytd-guide-entry-renderer:has(a[title="YouTube Premium"]) {
+        ytd-guide-renderer #sections ytd-guide-entry-renderer:has(a[title="YouTube Premium"]) {
             display: none !important;
         }
     }
     if removeCreatorStudio {
-        #sections ytd-guide-entry-renderer:has(a[title="Creator Studio"]) {
+        ytd-guide-renderer #sections ytd-guide-entry-renderer:has(a[title="Creator Studio"]) {
             display: none !important;
         }
     }
     if removeYTMusic {
-        #sections ytd-guide-entry-renderer:has(a[title="YouTube Music"]) {
+        ytd-guide-renderer #sections ytd-guide-entry-renderer:has(a[title="YouTube Music"]) {
             display: none !important;
         }
     }
     if removeYTKids {
-        #sections ytd-guide-entry-renderer:has(a[title="YouTube Kids"]) {
+        ytd-guide-renderer #sections ytd-guide-entry-renderer:has(a[title="YouTube Kids"]) {
             display: none !important;
         }
     }
     if removeYTTV {
-        #sections ytd-guide-entry-renderer:has(a[title="YouTube TV"]) {
+        ytd-guide-renderer #sections ytd-guide-entry-renderer:has(a[title="YouTube TV"]) {
             display: none !important;
         }
     }
@@ -230,28 +230,28 @@
     /* Settings Section */
 
     if removeSettingsSection {
-        #sections ytd-guide-section-renderer:nth-of-type(5) {
+        ytd-guide-renderer #sections ytd-guide-section-renderer:nth-of-type(5) {
             display: none !important;
         }
     }
     
     if removeSettings {
-        #sections ytd-guide-entry-renderer:has(a[title="Settings"]) {
+        ytd-guide-renderer #sections ytd-guide-entry-renderer:has(a[title="Settings"]) {
             display: none !important;
         }
     }
     if removeReportHistory {
-        #sections ytd-guide-entry-renderer:has(a[title="Report history"]) {
+        ytd-guide-renderer #sections ytd-guide-entry-renderer:has(a[title="Report history"]) {
             display: none !important;
         }
     }
     if removeHelp {
-        #sections ytd-guide-entry-renderer:has(a[title="Help"]) {
+        ytd-guide-renderer #sections ytd-guide-entry-renderer:has(a[title="Help"]) {
             display: none !important;
         }
     }
     if removeSendFeedback {
-        #sections ytd-guide-entry-renderer:has(a[title="Send feedback"]) {
+        ytd-guide-renderer #sections ytd-guide-entry-renderer:has(a[title="Send feedback"]) {
             display: none !important;
         }
     }
