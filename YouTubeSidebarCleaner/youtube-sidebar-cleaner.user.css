@@ -17,7 +17,7 @@
 @var    checkbox    removeWatchLater         "Remove Watch Later"                1
 @var    checkbox    removeLikedVideos        "Remove Liked Videos"               1
 @var    checkbox    removeShowMore           "Remove Show More"                  1
-@var    checkbox    removeSubsSection        "Remove Subscriptions Section"      0
+@var    checkbox    removeSubsSection        "Remove Subscriptions Section"      1
 @var    checkbox    removeSubsLabel          "Remove Subscriptions Label"        1
 @var    checkbox    removeExplore            "Remove Explore Section"            0
 @var    checkbox    removeExploreLabel       "Remove Explore Label"              1
