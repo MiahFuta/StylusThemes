@@ -4,7 +4,7 @@
 @author         MiahFuta (https://www.patreon.com/miahfuta)
 @description    Removes the unnecessary nonsense from the YouTube Side Bar
 @updateURL      https://raw.githubusercontent.com/MiahFuta/StylusThemes/main/YouTubeSidebarCleaner/youtube-sidebar-cleaner.user.css
-@version        1.0.1
+@version        1.0.2
 @license        GPL-3.0-only
 @preprocessor   stylus
 @var    checkbox    removeTopTags            "Remove Tags Under Searchbar"       1
@@ -259,7 +259,7 @@
     /* Settings Section */
 
     if removeAboutSection {
-        #footer {
+        ytd-guide-renderer #footer {
             display: none !important;
         }
     }
