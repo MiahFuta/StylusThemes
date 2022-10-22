@@ -4,11 +4,12 @@
 @author         MiahFuta (https://www.patreon.com/miahfuta)
 @description    Hides videos that you've already watched on YouTube
 @updateURL      https://raw.githubusercontent.com/MiahFuta/StylusThemes/main/YouTubeWatchedHider/youtube-watched-hider.user.css
-@version        1.0.5
+@version        1.0.6
 @license        GPL-3.0-only
 @preprocessor   stylus
-@var    checkbox    vidHide      "Completly Hide Watched Videos"     0
-@var    number      vidOpacity   "Watched Thumbnail Opacity"         [0.1, 0.1, 1, 0.1]
+@var    checkbox    vidWatched   "Show Watched Label"                 1
+@var    checkbox    vidHide      "Completely Hide Watched Videos"     0
+@var    number      vidOpacity   "Watched Thumbnail Opacity"          [0.1, 0.1, 1, 0.1]
 ==/UserStyle== */
 @-moz-document domain("youtube.com") {
     
@@ -46,6 +47,29 @@
             
             opacity: vidOpacity !important;
             
+        }
+        
+    }
+
+
+    #progress.ytd-thumbnail-overlay-resume-playback-renderer:after {
+        
+        if vidWatched {
+
+            content: "Watched" !important;
+            color: red !important;
+            font-size: 3.5em !important;
+            opacity: 0.8 !important;
+            display: flex !important;
+            justify-content: center !important;
+            align-items: center !important;
+            position: absolute !important;
+            top: -100% !important;
+            left: 50% !important;
+            transform: translate(-50%, -90%) !important;
+            background-color: rgba(0,0,0,1) !important;
+            width: 100% !important;
+
         }
         
     }
