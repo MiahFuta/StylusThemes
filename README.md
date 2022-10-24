@@ -1,7 +1,5 @@
 # Stylus Themes  
 
-<br>
-
 A collection of themes I made for the Stylus Extension  
   
 - Do you like my work? [Support Me on Patreon](https://www.patreon.com/miahfuta)  
@@ -10,13 +8,10 @@ A collection of themes I made for the Stylus Extension
 
 # Requirements  
 
-<br>
-
-- [Stylus for Chrome](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne)  
+- [Stylus Extension for Chrome](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne)  
   
-- [Stylus for Firefox](https://addons.mozilla.org/en-US/firefox/addon/styl-us/)  
+- [Stylus Extension for Firefox](https://addons.mozilla.org/en-US/firefox/addon/styl-us/)  
 
-<br>
 
 > Also works with Edge Web Browser as well, with Stylus for Chrome  
 > Simply "Allow extensions from other stores" in `edge://extensions/`  
