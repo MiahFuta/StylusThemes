@@ -22,6 +22,10 @@ A collection of themes I made for the Stylus Extension
 
 <br>
 
+<img src="https://raw.githubusercontent.com/MiahFuta/StylusThemes/main/YouTubeSidebarCleaner/example.jpg">
+
+<br>
+
 - YouTube Watched Hider [[Install Theme]](https://raw.githubusercontent.com/MiahFuta/StylusThemes/main/YouTubeWatchedHider/youtube-watched-hider.user.css)
   - Hides videos that you've already watched on YouTube  
 
