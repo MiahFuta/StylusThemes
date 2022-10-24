@@ -12,8 +12,8 @@ A collection of themes I made for the Stylus Extension
 
 <br>
 
-- YouTube Rainbow Progress Bar [[Install Theme]](https://raw.githubusercontent.com/MiahFuta/StylusThemes/main/YouTubeRainbowProgressBar/youtube-rainbow-progress-bar.user.css)
-  - Makes the progress bar for videos on YouTube have a rainbow effect  
+## YouTube Rainbow Progress Bar [[Install Theme]](https://raw.githubusercontent.com/MiahFuta/StylusThemes/main/YouTubeRainbowProgressBar/youtube-rainbow-progress-bar.user.css)
+- Makes the progress bar for videos on YouTube have a rainbow effect  
 
 <br>
 
@@ -21,8 +21,8 @@ A collection of themes I made for the Stylus Extension
 
 <br>
 
-- YouTube Sidebar Cleaner [[Install Theme]](https://raw.githubusercontent.com/MiahFuta/StylusThemes/main/YouTubeSidebarCleaner/youtube-sidebar-cleaner.user.css)
-  - Removes the unnecessary nonsense from the YouTube Side Bar
+## YouTube Sidebar Cleaner [[Install Theme]](https://raw.githubusercontent.com/MiahFuta/StylusThemes/main/YouTubeSidebarCleaner/youtube-sidebar-cleaner.user.css)
+- Removes the unnecessary nonsense from the YouTube Side Bar
 
 <br>
 
@@ -30,8 +30,8 @@ A collection of themes I made for the Stylus Extension
 
 <br>
 
-- YouTube Watched Hider [[Install Theme]](https://raw.githubusercontent.com/MiahFuta/StylusThemes/main/YouTubeWatchedHider/youtube-watched-hider.user.css)
-  - Hides videos that you've already watched on YouTube  
+## YouTube Watched Hider [[Install Theme]](https://raw.githubusercontent.com/MiahFuta/StylusThemes/main/YouTubeWatchedHider/youtube-watched-hider.user.css)
+- Hides videos that you've already watched on YouTube  
 
 <br>
 
