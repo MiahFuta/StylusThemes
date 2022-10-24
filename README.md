@@ -46,4 +46,3 @@ A collection of themes I made for the Stylus Extension
 <br>
 
 <img src="https://raw.githubusercontent.com/MiahFuta/StylusThemes/main/YouTubeWatchedHider/example.jpg">  
-
