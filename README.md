@@ -17,6 +17,10 @@ A collection of themes I made for the Stylus Extension
 
 <br>
 
+<img src="https://raw.githubusercontent.com/MiahFuta/StylusThemes/main/YouTubeRainbowProgressBar/example.jpg">
+
+<br>
+
 - YouTube Sidebar Cleaner [[Install Theme]](https://raw.githubusercontent.com/MiahFuta/StylusThemes/main/YouTubeSidebarCleaner/youtube-sidebar-cleaner.user.css)
   - Removes the unnecessary nonsense from the YouTube Side Bar
 
