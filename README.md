@@ -31,6 +31,11 @@ A collection of themes I made for the Stylus Extension
 
 <br>
 
+## Youtube Shorts Hider [[Install Theme]](https://raw.githubusercontent.com/MiahFuta/StylusThemes/main/YoutubeShortsHider/youtube-shorts-hider.user.css)  
+- Hides YouTube Shorts from your Subscriptions Feed
+
+<br>
+
 ## YouTube Sidebar Cleaner [[Install Theme]](https://raw.githubusercontent.com/MiahFuta/StylusThemes/main/YouTubeSidebarCleaner/youtube-sidebar-cleaner.user.css)  
 - Removes the unnecessary nonsense from the YouTube Side Bar  
 
