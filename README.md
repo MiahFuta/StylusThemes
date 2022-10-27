@@ -28,7 +28,7 @@ A collection of themes I made for the Stylus Extension
 <br>
 
 ## YouTube Shorts Hider [[Install Theme]](https://raw.githubusercontent.com/MiahFuta/StylusThemes/main/YouTubeShortsHider/youtube-shorts-hider.user.css)  
-- Hides YouTube Shorts from your Subscriptions Feed
+- Hides YouTube Shorts from your Subscriptions Feed  
 
 <br>
 
