@@ -1,0 +1,51 @@
+/* ==UserStyle==
+@name           YouTube Shorts Hider
+@namespace      https://www.miahfuta.com
+@author         MiahFuta (https://www.patreon.com/miahfuta)
+@description    Hides YouTube Shorts from Subscriptions Feed
+@updateURL      https://raw.githubusercontent.com/MiahFuta/StylusThemes/main/YouTubeShortsHider/youtube-shorts-hider.user.css
+@version        1.0.0
+@license        GPL-3.0-only
+@preprocessor   stylus
+@var    checkbox    shortsHide      "Completely Hide Shorts"     1
+@var    number      shortsOpacity   "Shorts Thumbnail Opacity"          [0.1, 0.1, 1, 0.1]
+==/UserStyle== */
+
+@-moz-document domain("youtube.com") {
+
+    ytd-grid-video-renderer:has(a[href^='/shorts/']) {
+        if shortsHide {
+            display: none !important;
+        } else {
+            opacity: shortsOpacity !important;
+        }
+    }
+    
+}
+
+
+
+/********************************************************************************************************************************************************************************/
+/*                                                                                                                                                                              */
+/*     MMMMMMMM               MMMMMMMM   iiii                     hhhhhhh              FFFFFFFFFFFFFFFFFFFFFF                            tttt                                   */
+/*     M:::::::M             M:::::::M  i::::i                    h:::::h              F::::::::::::::::::::F                         ttt:::t                                   */
+/*     M::::::::M           M::::::::M   iiii                     h:::::h              F::::::::::::::::::::F                         t:::::t                                   */
+/*     M:::::::::M         M:::::::::M                            h:::::h              FF::::::FFFFFFFFF::::F                         t:::::t                                   */
+/*     M::::::::::M       M::::::::::M iiiiiii    aaaaaaaaaaaaa    h::::h hhhhh          F:::::F       FFFFFF uuuuuu    uuuuuu  ttttttt:::::ttttttt       aaaaaaaaaaaaa         */
+/*     M:::::::::::M     M:::::::::::M i:::::i    a::::::::::::a   h::::hh:::::hhh       F:::::F              u::::u    u::::u  t:::::::::::::::::t       a::::::::::::a        */
+/*     M:::::::M::::M   M::::M:::::::M  i::::i    aaaaaaaaa:::::a  h::::::::::::::hh     F::::::FFFFFFFFFF    u::::u    u::::u  t:::::::::::::::::t       aaaaaaaaa:::::a       */
+/*     M::::::M M::::M M::::M M::::::M  i::::i             a::::a  h:::::::hhh::::::h    F:::::::::::::::F    u::::u    u::::u  tttttt:::::::tttttt                a::::a       */
+/*     M::::::M  M::::M::::M  M::::::M  i::::i      aaaaaaa:::::a  h::::::h   h::::::h   F:::::::::::::::F    u::::u    u::::u        t:::::t               aaaaaaa:::::a       */
+/*     M::::::M   M:::::::M   M::::::M  i::::i    aa::::::::::::a  h:::::h     h:::::h   F::::::FFFFFFFFFF    u::::u    u::::u        t:::::t             aa::::::::::::a       */
+/*     M::::::M    M:::::M    M::::::M  i::::i   a::::aaaa::::::a  h:::::h     h:::::h   F:::::F              u::::u    u::::u        t:::::t            a::::aaaa::::::a       */
+/*     M::::::M     MMMMM     M::::::M  i::::i  a::::a    a:::::a  h:::::h     h:::::h   F:::::F              u:::::uuuu:::::u        t:::::t    tttttt a::::a    a:::::a       */
+/*     M::::::M               M::::::M i::::::i a::::a    a:::::a  h:::::h     h:::::h FF:::::::FF            u:::::::::::::::uu      t::::::tttt:::::t a::::a    a:::::a       */
+/*     M::::::M               M::::::M i::::::i a:::::aaaa::::::a  h:::::h     h:::::h F::::::::FF             u:::::::::::::::u      tt::::::::::::::t a:::::aaaa::::::a       */
+/*     M::::::M               M::::::M i::::::i  a::::::::::aa:::a h:::::h     h:::::h F::::::::FF              uu::::::::uu:::u        tt:::::::::::tt  a::::::::::aa:::a      */
+/*     MMMMMMMM               MMMMMMMM iiiiiiii   aaaaaaaaaa  aaaa hhhhhhh     hhhhhhh FFFFFFFFFFF                uuuuuuuu  uuuu          ttttttttttt     aaaaaaaaaa  aaaa      */
+/*                                                                                                                                                                              */
+/********************************************************************************************************************************************************************************/
+/*                                                                                                                                                                              */
+/*                                                                          © MiahFuta Inc. 2022 All Rights Reserved.                                                           */
+/*                                                                                                                                                                              */
+/********************************************************************************************************************************************************************************/
