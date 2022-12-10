@@ -4,7 +4,7 @@
 @author         MiahFuta (https://www.patreon.com/miahfuta)
 @description    Removes the unnecessary nonsense from the YouTube Side Bar
 @updateURL      https://raw.githubusercontent.com/MiahFuta/StylusThemes/main/YouTubeSidebarCleaner/youtube-sidebar-cleaner.user.css
-@version        1.0.3
+@version        1.0.4
 @license        GPL-3.0-only
 @preprocessor   stylus
 @var    checkbox    removeTopTags            "Remove Tags Under Searchbar"       1
@@ -13,7 +13,7 @@
 @var    checkbox    removeSubscriptions      "Remove Subscriptions"              0
 @var    checkbox    removeLibrary            "Remove Library"                    1
 @var    checkbox    removeHistory            "Remove History"                    0
-@var    checkbox    removeClips              "Remove Your Clips"                 0
+@var    checkbox    removeYourClips          "Remove Your Clips"                 0
 @var    checkbox    removeYourVideos         "Remove Your Videos"                1
 @var    checkbox    removeWatchLater         "Remove Watch Later"                1
 @var    checkbox    removeLikedVideos        "Remove Liked Videos"               1
