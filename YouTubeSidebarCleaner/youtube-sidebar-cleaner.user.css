@@ -4,7 +4,7 @@
 @author         MiahFuta (https://www.patreon.com/miahfuta)
 @description    Removes the unnecessary nonsense from the YouTube Side Bar
 @updateURL      https://raw.githubusercontent.com/MiahFuta/StylusThemes/main/YouTubeSidebarCleaner/youtube-sidebar-cleaner.user.css
-@version        1.0.2
+@version        1.0.3
 @license        GPL-3.0-only
 @preprocessor   stylus
 @var    checkbox    removeTopTags            "Remove Tags Under Searchbar"       1
@@ -13,6 +13,7 @@
 @var    checkbox    removeSubscriptions      "Remove Subscriptions"              0
 @var    checkbox    removeLibrary            "Remove Library"                    1
 @var    checkbox    removeHistory            "Remove History"                    0
+@var    checkbox    removeClips              "Remove Your Clips"                 0
 @var    checkbox    removeYourVideos         "Remove Your Videos"                1
 @var    checkbox    removeWatchLater         "Remove Watch Later"                1
 @var    checkbox    removeLikedVideos        "Remove Liked Videos"               1
@@ -23,7 +24,7 @@
 @var    checkbox    removeExploreLabel       "Remove Explore Label"              1
 @var    checkbox    removeTrending           "Remove Trending"                   0
 @var    checkbox    removeMusic              "Remove Music"                      1
-@var    checkbox    removeMovies             "Remove Movies & Shows"             1
+@var    checkbox    removeMovies             "Remove Movies & TV"                1
 @var    checkbox    removeLive               "Remove Live"                       1
 @var    checkbox    removeGaming             "Remove Gaming"                     1
 @var    checkbox    removeNews               "Remove News"                       1
@@ -84,6 +85,11 @@
     }
     if removeHistory {
         ytd-guide-renderer #sections ytd-guide-entry-renderer:has(a[title="History"]) {
+            display: none !important;
+        }
+    }
+    if removeYourClips {
+        ytd-guide-renderer #sections ytd-guide-entry-renderer:has(a[title="Your clips"]) {
             display: none !important;
         }
     }
@@ -149,7 +155,7 @@
         }
     }
     if removeMovies {
-        ytd-guide-renderer #sections ytd-guide-entry-renderer:has(a[title="Movies \& Shows"]) {
+        ytd-guide-renderer #sections ytd-guide-entry-renderer:has(a[title="Movies \& TV"]) {
             display: none !important;
         }
     }
