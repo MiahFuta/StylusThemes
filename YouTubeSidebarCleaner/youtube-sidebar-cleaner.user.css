@@ -4,7 +4,7 @@
 @author         MiahFuta (https://www.patreon.com/miahfuta)
 @description    Removes the unnecessary nonsense from the YouTube Side Bar
 @updateURL      https://raw.githubusercontent.com/MiahFuta/StylusThemes/main/YouTubeSidebarCleaner/youtube-sidebar-cleaner.user.css
-@version        1.0.5
+@version        1.0.6
 @license        GPL-3.0-only
 @preprocessor   stylus
 @var    checkbox    removeTopTags            "Remove Tags Under Searchbar"       1
@@ -23,7 +23,7 @@
 @var    checkbox    removeExplore            "Remove Explore Section"            0
 @var    checkbox    removeExploreLabel       "Remove Explore Label"              1
 @var    checkbox    removeTrending           "Remove Trending"                   0
-@var    checkbox    removeShopping           "Remove Shopping"                   0
+@var    checkbox    removeShopping           "Remove Shopping"                   1
 @var    checkbox    removeMusic              "Remove Music"                      1
 @var    checkbox    removeMovies             "Remove Movies & TV"                1
 @var    checkbox    removeLive               "Remove Live"                       1
@@ -134,7 +134,7 @@
             display: none !important;
         }
     }
-    if removeTrending {
+    if removeShopping {
         ytd-guide-renderer #sections ytd-guide-entry-renderer:has(a[title="Shopping"]) {
             display: none !important;
         }
