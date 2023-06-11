@@ -4,7 +4,7 @@
 @author         MiahFuta (https://www.patreon.com/miahfuta)
 @description    Removes the unnecessary nonsense from the YouTube Side Bar
 @updateURL      https://raw.githubusercontent.com/MiahFuta/StylusThemes/main/YouTubeSidebarCleaner/youtube-sidebar-cleaner.user.css
-@version        1.0.4
+@version        1.0.5
 @license        GPL-3.0-only
 @preprocessor   stylus
 @var    checkbox    removeTopTags            "Remove Tags Under Searchbar"       1
@@ -23,6 +23,7 @@
 @var    checkbox    removeExplore            "Remove Explore Section"            0
 @var    checkbox    removeExploreLabel       "Remove Explore Label"              1
 @var    checkbox    removeTrending           "Remove Trending"                   0
+@var    checkbox    removeShopping           "Remove Shopping"                   0
 @var    checkbox    removeMusic              "Remove Music"                      1
 @var    checkbox    removeMovies             "Remove Movies & TV"                1
 @var    checkbox    removeLive               "Remove Live"                       1
@@ -48,18 +49,13 @@
 ==/UserStyle== */
 
 @-moz-document domain("www.youtube.com") {
-    
-    
     /* Tags Under Search */
-
     if removeTopTags {
         #header ytd-feed-filter-chip-bar-renderer {
             display: none !important;
         }
     }
-    
     /* Home Section */
-    
     if removeHome {
         ytd-guide-renderer #sections ytd-guide-entry-renderer:has(a[title="Home"]) {
             display: none !important;
@@ -75,9 +71,7 @@
             display: none !important;
         }
     }
-    
     /* Library Section */
-    
     if removeLibrary {
         ytd-guide-renderer #sections ytd-guide-entry-renderer:has(a[title="Library"]) {
             display: none !important;
@@ -113,39 +107,35 @@
             display: none !important;
         }
     }
-    
-    
     /* Subscriptions Section */
-    
     if removeSubsSection {
         ytd-guide-renderer #sections ytd-guide-section-renderer:nth-of-type(2) {
             display: none !important;
         }
     }
-    
     if removeSubsLabel {
         ytd-guide-renderer #sections ytd-guide-section-renderer:nth-of-type(2) #guide-section-title {
             display: none !important;
         }
     }
-    
-    
     /* Explore Section */
-
     if removeExplore {
         ytd-guide-renderer #sections ytd-guide-section-renderer:nth-of-type(3) {
             display: none;
         }
     }
-    
     if removeExploreLabel {
         ytd-guide-renderer #sections ytd-guide-section-renderer:nth-of-type(3) #guide-section-title {
             display: none;
         }
     }
-
     if removeTrending {
         ytd-guide-renderer #sections ytd-guide-entry-renderer:has(a[title="Trending"]) {
+            display: none !important;
+        }
+    }
+    if removeTrending {
+        ytd-guide-renderer #sections ytd-guide-entry-renderer:has(a[title="Shopping"]) {
             display: none !important;
         }
     }
@@ -194,9 +184,7 @@
             display: none !important;
         }
     }
-
     /* More From YouTube Section */
-
     if removeMoreFromYT {
         ytd-guide-renderer #sections ytd-guide-section-renderer:nth-of-type(4) {
             display: none !important;
@@ -232,15 +220,12 @@
             display: none !important;
         }
     }
-    
     /* Settings Section */
-
     if removeSettingsSection {
         ytd-guide-renderer #sections ytd-guide-section-renderer:nth-of-type(5) {
             display: none !important;
         }
     }
-    
     if removeSettings {
         ytd-guide-renderer #sections ytd-guide-entry-renderer:has(a[title="Settings"]) {
             display: none !important;
@@ -261,40 +246,82 @@
             display: none !important;
         }
     }
-
     /* Settings Section */
-
     if removeAboutSection {
         ytd-guide-renderer #footer {
             display: none !important;
         }
     }
-
 }
 
 
+/********************************************************************************************************************************************************************************/
+
+
+/*                                                                                                                                                                              */
+
+
+/*     MMMMMMMM               MMMMMMMM   iiii                     hhhhhhh              FFFFFFFFFFFFFFFFFFFFFF                            tttt                                   */
+
+
+/*     M:::::::M             M:::::::M  i::::i                    h:::::h              F::::::::::::::::::::F                         ttt:::t                                   */
+
+
+/*     M::::::::M           M::::::::M   iiii                     h:::::h              F::::::::::::::::::::F                         t:::::t                                   */
+
+
+/*     M:::::::::M         M:::::::::M                            h:::::h              FF::::::FFFFFFFFF::::F                         t:::::t                                   */
+
+
+/*     M::::::::::M       M::::::::::M iiiiiii    aaaaaaaaaaaaa    h::::h hhhhh          F:::::F       FFFFFF uuuuuu    uuuuuu  ttttttt:::::ttttttt       aaaaaaaaaaaaa         */
+
+
+/*     M:::::::::::M     M:::::::::::M i:::::i    a::::::::::::a   h::::hh:::::hhh       F:::::F              u::::u    u::::u  t:::::::::::::::::t       a::::::::::::a        */
+
+
+/*     M:::::::M::::M   M::::M:::::::M  i::::i    aaaaaaaaa:::::a  h::::::::::::::hh     F::::::FFFFFFFFFF    u::::u    u::::u  t:::::::::::::::::t       aaaaaaaaa:::::a       */
+
+
+/*     M::::::M M::::M M::::M M::::::M  i::::i             a::::a  h:::::::hhh::::::h    F:::::::::::::::F    u::::u    u::::u  tttttt:::::::tttttt                a::::a       */
+
+
+/*     M::::::M  M::::M::::M  M::::::M  i::::i      aaaaaaa:::::a  h::::::h   h::::::h   F:::::::::::::::F    u::::u    u::::u        t:::::t               aaaaaaa:::::a       */
+
+
+/*     M::::::M   M:::::::M   M::::::M  i::::i    aa::::::::::::a  h:::::h     h:::::h   F::::::FFFFFFFFFF    u::::u    u::::u        t:::::t             aa::::::::::::a       */
+
+
+/*     M::::::M    M:::::M    M::::::M  i::::i   a::::aaaa::::::a  h:::::h     h:::::h   F:::::F              u::::u    u::::u        t:::::t            a::::aaaa::::::a       */
+
+
+/*     M::::::M     MMMMM     M::::::M  i::::i  a::::a    a:::::a  h:::::h     h:::::h   F:::::F              u:::::uuuu:::::u        t:::::t    tttttt a::::a    a:::::a       */
+
+
+/*     M::::::M               M::::::M i::::::i a::::a    a:::::a  h:::::h     h:::::h FF:::::::FF            u:::::::::::::::uu      t::::::tttt:::::t a::::a    a:::::a       */
+
+
+/*     M::::::M               M::::::M i::::::i a:::::aaaa::::::a  h:::::h     h:::::h F::::::::FF             u:::::::::::::::u      tt::::::::::::::t a:::::aaaa::::::a       */
+
+
+/*     M::::::M               M::::::M i::::::i  a::::::::::aa:::a h:::::h     h:::::h F::::::::FF              uu::::::::uu:::u        tt:::::::::::tt  a::::::::::aa:::a      */
+
+
+/*     MMMMMMMM               MMMMMMMM iiiiiiii   aaaaaaaaaa  aaaa hhhhhhh     hhhhhhh FFFFFFFFFFF                uuuuuuuu  uuuu          ttttttttttt     aaaaaaaaaa  aaaa      */
+
+
+/*                                                                                                                                                                              */
+
 
 /********************************************************************************************************************************************************************************/
+
+
 /*                                                                                                                                                                              */
-/*     MMMMMMMM               MMMMMMMM   iiii                     hhhhhhh              FFFFFFFFFFFFFFFFFFFFFF                            tttt                                   */
-/*     M:::::::M             M:::::::M  i::::i                    h:::::h              F::::::::::::::::::::F                         ttt:::t                                   */
-/*     M::::::::M           M::::::::M   iiii                     h:::::h              F::::::::::::::::::::F                         t:::::t                                   */
-/*     M:::::::::M         M:::::::::M                            h:::::h              FF::::::FFFFFFFFF::::F                         t:::::t                                   */
-/*     M::::::::::M       M::::::::::M iiiiiii    aaaaaaaaaaaaa    h::::h hhhhh          F:::::F       FFFFFF uuuuuu    uuuuuu  ttttttt:::::ttttttt       aaaaaaaaaaaaa         */
-/*     M:::::::::::M     M:::::::::::M i:::::i    a::::::::::::a   h::::hh:::::hhh       F:::::F              u::::u    u::::u  t:::::::::::::::::t       a::::::::::::a        */
-/*     M:::::::M::::M   M::::M:::::::M  i::::i    aaaaaaaaa:::::a  h::::::::::::::hh     F::::::FFFFFFFFFF    u::::u    u::::u  t:::::::::::::::::t       aaaaaaaaa:::::a       */
-/*     M::::::M M::::M M::::M M::::::M  i::::i             a::::a  h:::::::hhh::::::h    F:::::::::::::::F    u::::u    u::::u  tttttt:::::::tttttt                a::::a       */
-/*     M::::::M  M::::M::::M  M::::::M  i::::i      aaaaaaa:::::a  h::::::h   h::::::h   F:::::::::::::::F    u::::u    u::::u        t:::::t               aaaaaaa:::::a       */
-/*     M::::::M   M:::::::M   M::::::M  i::::i    aa::::::::::::a  h:::::h     h:::::h   F::::::FFFFFFFFFF    u::::u    u::::u        t:::::t             aa::::::::::::a       */
-/*     M::::::M    M:::::M    M::::::M  i::::i   a::::aaaa::::::a  h:::::h     h:::::h   F:::::F              u::::u    u::::u        t:::::t            a::::aaaa::::::a       */
-/*     M::::::M     MMMMM     M::::::M  i::::i  a::::a    a:::::a  h:::::h     h:::::h   F:::::F              u:::::uuuu:::::u        t:::::t    tttttt a::::a    a:::::a       */
-/*     M::::::M               M::::::M i::::::i a::::a    a:::::a  h:::::h     h:::::h FF:::::::FF            u:::::::::::::::uu      t::::::tttt:::::t a::::a    a:::::a       */
-/*     M::::::M               M::::::M i::::::i a:::::aaaa::::::a  h:::::h     h:::::h F::::::::FF             u:::::::::::::::u      tt::::::::::::::t a:::::aaaa::::::a       */
-/*     M::::::M               M::::::M i::::::i  a::::::::::aa:::a h:::::h     h:::::h F::::::::FF              uu::::::::uu:::u        tt:::::::::::tt  a::::::::::aa:::a      */
-/*     MMMMMMMM               MMMMMMMM iiiiiiii   aaaaaaaaaa  aaaa hhhhhhh     hhhhhhh FFFFFFFFFFF                uuuuuuuu  uuuu          ttttttttttt     aaaaaaaaaa  aaaa      */
-/*                                                                                                                                                                              */
-/********************************************************************************************************************************************************************************/
-/*                                                                                                                                                                              */
+
+
 /*                                                                          © MiahFuta Inc. 2022 All Rights Reserved.                                                           */
+
+
 /*                                                                                                                                                                              */
+
+
 /********************************************************************************************************************************************************************************/
