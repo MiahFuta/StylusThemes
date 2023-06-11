@@ -15,7 +15,7 @@
 
     /* Subscriptions Feed */
 
-    ytd-grid-video-renderer:has(a[href^='/shorts/']) {
+    ytd-rich-item-renderer:has(a[href^='/shorts/']) {
 
         if shortsHide {
 
