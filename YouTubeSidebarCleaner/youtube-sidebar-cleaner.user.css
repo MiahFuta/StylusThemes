@@ -30,9 +30,11 @@
 @var    checkbox    removeGaming             "Remove Gaming"                     1
 @var    checkbox    removeNews               "Remove News"                       1
 @var    checkbox    removeSports             "Remove Sports"                     1
+@var    checkbox    removeCourses            "Remove Courses"                    1
 @var    checkbox    removeLearning           "Remove Learning"                   1
 @var    checkbox    removeFashion            "Remove Fashion & Beauty"           1
 @var    checkbox    removePodcasts           "Remove Podcasts"                   1
+@var    checkbox    removePlayables          "Remove Playables"                  1
 @var    checkbox    removeMoreFromYT         "Remove More From YouTube Section"  0
 @var    checkbox    removeMoreFromYTLabel    "Remove More From YouTube Label"    1
 @var    checkbox    removeYTPremium          "Remove YouTube Premium"            1
@@ -49,279 +51,265 @@
 ==/UserStyle== */
 
 @-moz-document domain("www.youtube.com") {
-    /* Tags Under Search */
-    if removeTopTags {
-        #header ytd-feed-filter-chip-bar-renderer {
-            display: none !important;
-        }
-    }
-    /* Home Section */
-    if removeHome {
-        ytd-guide-renderer #sections ytd-guide-entry-renderer:has(a[title="Home"]) {
-            display: none !important;
-        }
-    }
-    if removeShorts {
-        ytd-guide-renderer #sections ytd-guide-entry-renderer:has(a[title="Shorts"]) {
-            display: none !important;
-        }
-    }
-    if removeSubscriptions {
-        ytd-guide-renderer #sections ytd-guide-entry-renderer:has(a[title="Subscriptions"]) {
-            display: none !important;
-        }
-    }
-    /* Library Section */
-    if removeLibrary {
-        ytd-guide-renderer #sections ytd-guide-entry-renderer:has(a[title="Library"]) {
-            display: none !important;
-        }
-    }
-    if removeHistory {
-        ytd-guide-renderer #sections ytd-guide-entry-renderer:has(a[title="History"]) {
-            display: none !important;
-        }
-    }
-    if removeYourClips {
-        ytd-guide-renderer #sections ytd-guide-entry-renderer:has(a[title="Your clips"]) {
-            display: none !important;
-        }
-    }
-    if removeYourVideos {
-        ytd-guide-renderer #sections ytd-guide-entry-renderer:has(a[title="Your videos"]) {
-            display: none !important;
-        }
-    }
-    if removeWatchLater {
-        ytd-guide-renderer #sections ytd-guide-entry-renderer:has(a[title="Watch later"]) {
-            display: none !important;
-        }
-    }
-    if removeLikedVideos {
-        ytd-guide-renderer #sections ytd-guide-entry-renderer:has(a[title="Liked videos"]) {
-            display: none !important;
-        }
-    }
-    if removeShowMore {
-        ytd-guide-renderer #sections ytd-guide-entry-renderer:has(a[title="Show more"]) {
-            display: none !important;
-        }
-    }
-    /* Subscriptions Section */
-    if removeSubsSection {
-        ytd-guide-renderer #sections ytd-guide-section-renderer:nth-of-type(2) {
-            display: none !important;
-        }
-    }
-    if removeSubsLabel {
-        ytd-guide-renderer #sections ytd-guide-section-renderer:nth-of-type(2) #guide-section-title {
-            display: none !important;
-        }
-    }
-    /* Explore Section */
-    if removeExplore {
-        ytd-guide-renderer #sections ytd-guide-section-renderer:nth-of-type(3) {
-            display: none;
-        }
-    }
-    if removeExploreLabel {
-        ytd-guide-renderer #sections ytd-guide-section-renderer:nth-of-type(3) #guide-section-title {
-            display: none;
-        }
-    }
-    if removeTrending {
-        ytd-guide-renderer #sections ytd-guide-entry-renderer:has(a[title="Trending"]) {
-            display: none !important;
-        }
-    }
-    if removeShopping {
-        ytd-guide-renderer #sections ytd-guide-entry-renderer:has(a[title="Shopping"]) {
-            display: none !important;
-        }
-    }
-    if removeMusic {
-        ytd-guide-renderer #sections ytd-guide-entry-renderer:has(a[title="Music"]) {
-            display: none !important;
-        }
-    }
-    if removeMovies {
-        ytd-guide-renderer #sections ytd-guide-entry-renderer:has(a[title="Movies \& TV"]) {
-            display: none !important;
-        }
-    }
-    if removeLive {
-        ytd-guide-renderer #sections ytd-guide-entry-renderer:has(a[title="Live"]) {
-            display: none !important;
-        }
-    }
-    if removeGaming {
-        ytd-guide-renderer #sections ytd-guide-entry-renderer:has(a[title="Gaming"]) {
-            display: none !important;
-        }
-    }
-    if removeNews {
-        ytd-guide-renderer #sections ytd-guide-entry-renderer:has(a[title="News"]) {
-            display: none !important;
-        }
-    }
-    if removeSports {
-        ytd-guide-renderer #sections ytd-guide-entry-renderer:has(a[title="Sports"]) {
-            display: none !important;
-        }
-    }
-    if removeLearning {
-        ytd-guide-renderer #sections ytd-guide-entry-renderer:has(a[title="Learning"]) {
-            display: none !important;
-        }
-    }
-    if removeFashion {
-        ytd-guide-renderer #sections ytd-guide-entry-renderer:has(a[title="Fashion \& Beauty"]) {
-            display: none !important;
-        }
-    }
-    if removePodcasts {
-        ytd-guide-renderer #sections ytd-guide-entry-renderer:has(a[title="Podcasts"]) {
-            display: none !important;
-        }
-    }
-    /* More From YouTube Section */
-    if removeMoreFromYT {
-        ytd-guide-renderer #sections ytd-guide-section-renderer:nth-of-type(4) {
-            display: none !important;
-        }
-    }
-    if removeMoreFromYTLabel {
-        ytd-guide-renderer #sections ytd-guide-section-renderer:nth-of-type(4) #guide-section-title {
-            display: none !important;
-        }
-    }
-    if removeYTPremium {
-        ytd-guide-renderer #sections ytd-guide-entry-renderer:has(a[title="YouTube Premium"]) {
-            display: none !important;
-        }
-    }
-    if removeCreatorStudio {
-        ytd-guide-renderer #sections ytd-guide-entry-renderer:has(a[title="Creator Studio"]) {
-            display: none !important;
-        }
-    }
-    if removeYTMusic {
-        ytd-guide-renderer #sections ytd-guide-entry-renderer:has(a[title="YouTube Music"]) {
-            display: none !important;
-        }
-    }
-    if removeYTKids {
-        ytd-guide-renderer #sections ytd-guide-entry-renderer:has(a[title="YouTube Kids"]) {
-            display: none !important;
-        }
-    }
-    if removeYTTV {
-        ytd-guide-renderer #sections ytd-guide-entry-renderer:has(a[title="YouTube TV"]) {
-            display: none !important;
-        }
-    }
-    /* Settings Section */
-    if removeSettingsSection {
-        ytd-guide-renderer #sections ytd-guide-section-renderer:nth-of-type(5) {
-            display: none !important;
-        }
-    }
-    if removeSettings {
-        ytd-guide-renderer #sections ytd-guide-entry-renderer:has(a[title="Settings"]) {
-            display: none !important;
-        }
-    }
-    if removeReportHistory {
-        ytd-guide-renderer #sections ytd-guide-entry-renderer:has(a[title="Report history"]) {
-            display: none !important;
-        }
-    }
-    if removeHelp {
-        ytd-guide-renderer #sections ytd-guide-entry-renderer:has(a[title="Help"]) {
-            display: none !important;
-        }
-    }
-    if removeSendFeedback {
-        ytd-guide-renderer #sections ytd-guide-entry-renderer:has(a[title="Send feedback"]) {
-            display: none !important;
-        }
-    }
-    /* Settings Section */
-    if removeAboutSection {
-        ytd-guide-renderer #footer {
-            display: none !important;
-        }
-    }
+	/* Tags Under Search */
+	if removeTopTags {
+		#header ytd-feed-filter-chip-bar-renderer {
+			display: none !important;
+		}
+	}
+	/* Home Section */
+	if removeHome {
+		ytd-guide-renderer #sections ytd-guide-entry-renderer:has(a[title='Home']) {
+			display: none !important;
+		}
+	}
+	if removeShorts {
+		ytd-guide-renderer #sections ytd-guide-entry-renderer:has(a[title='Shorts']) {
+			display: none !important;
+		}
+	}
+	if removeSubscriptions {
+		ytd-guide-renderer #sections ytd-guide-entry-renderer:has(a[title='Subscriptions']) {
+			display: none !important;
+		}
+	}
+	/* Library Section */
+	if removeLibrary {
+		ytd-guide-renderer #sections ytd-guide-entry-renderer:has(a[title='Library']) {
+			display: none !important;
+		}
+	}
+	if removeHistory {
+		ytd-guide-renderer #sections ytd-guide-entry-renderer:has(a[title='History']) {
+			display: none !important;
+		}
+	}
+	if removeYourClips {
+		ytd-guide-renderer #sections ytd-guide-entry-renderer:has(a[title='Your clips']) {
+			display: none !important;
+		}
+	}
+	if removeYourVideos {
+		ytd-guide-renderer #sections ytd-guide-entry-renderer:has(a[title='Your videos']) {
+			display: none !important;
+		}
+	}
+	if removeWatchLater {
+		ytd-guide-renderer #sections ytd-guide-entry-renderer:has(a[title='Watch later']) {
+			display: none !important;
+		}
+	}
+	if removeLikedVideos {
+		ytd-guide-renderer #sections ytd-guide-entry-renderer:has(a[title='Liked videos']) {
+			display: none !important;
+		}
+	}
+	if removeShowMore {
+		ytd-guide-renderer #sections ytd-guide-entry-renderer:has(a[title='Show more']) {
+			display: none !important;
+		}
+	}
+	/* Subscriptions Section */
+	if removeSubsSection {
+		ytd-guide-renderer #sections ytd-guide-section-renderer:nth-of-type(2) {
+			display: none !important;
+		}
+	}
+	if removeSubsLabel {
+		ytd-guide-renderer #sections ytd-guide-section-renderer:nth-of-type(2) #guide-section-title {
+			display: none !important;
+		}
+	}
+	/* Explore Section */
+	if removeExplore {
+		ytd-guide-renderer #sections ytd-guide-section-renderer:nth-of-type(3) {
+			display: none;
+		}
+	}
+	if removeExploreLabel {
+		ytd-guide-renderer #sections ytd-guide-section-renderer:nth-of-type(3) #guide-section-title {
+			display: none;
+		}
+	}
+	if removeTrending {
+		ytd-guide-renderer #sections ytd-guide-entry-renderer:has(a[title='Trending']) {
+			display: none !important;
+		}
+	}
+	if removeShopping {
+		ytd-guide-renderer #sections ytd-guide-entry-renderer:has(a[title='Shopping']) {
+			display: none !important;
+		}
+	}
+	if removeMusic {
+		ytd-guide-renderer #sections ytd-guide-entry-renderer:has(a[title='Music']) {
+			display: none !important;
+		}
+	}
+	if removeMovies {
+		ytd-guide-renderer #sections ytd-guide-entry-renderer:has(a[title='Movies \& TV']) {
+			display: none !important;
+		}
+	}
+	if removeLive {
+		ytd-guide-renderer #sections ytd-guide-entry-renderer:has(a[title='Live']) {
+			display: none !important;
+		}
+	}
+	if removeGaming {
+		ytd-guide-renderer #sections ytd-guide-entry-renderer:has(a[title='Gaming']) {
+			display: none !important;
+		}
+	}
+	if removeNews {
+		ytd-guide-renderer #sections ytd-guide-entry-renderer:has(a[title='News']) {
+			display: none !important;
+		}
+	}
+	if removeSports {
+		ytd-guide-renderer #sections ytd-guide-entry-renderer:has(a[title='Sports']) {
+			display: none !important;
+		}
+	}
+	if removeCourses {
+		ytd-guide-renderer #sections ytd-guide-entry-renderer:has(a[title='Courses']) {
+			display: none !important;
+		}
+	}
+	if removeLearning {
+		ytd-guide-renderer #sections ytd-guide-entry-renderer:has(a[title='Learning']) {
+			display: none !important;
+		}
+	}
+	if removeFashion {
+		ytd-guide-renderer #sections ytd-guide-entry-renderer:has(a[title='Fashion \& Beauty']) {
+			display: none !important;
+		}
+	}
+	if removePodcasts {
+		ytd-guide-renderer #sections ytd-guide-entry-renderer:has(a[title='Podcasts']) {
+			display: none !important;
+		}
+	}
+	if removePlayables {
+		ytd-guide-renderer #sections ytd-guide-entry-renderer:has(a[title='Playables']) {
+			display: none !important;
+		}
+	}
+	/* More From YouTube Section */
+	if removeMoreFromYT {
+		ytd-guide-renderer #sections ytd-guide-section-renderer:nth-of-type(4) {
+			display: none !important;
+		}
+	}
+	if removeMoreFromYTLabel {
+		ytd-guide-renderer #sections ytd-guide-section-renderer:nth-of-type(4) #guide-section-title {
+			display: none !important;
+		}
+	}
+	if removeYTPremium {
+		ytd-guide-renderer #sections ytd-guide-entry-renderer:has(a[title='YouTube Premium']) {
+			display: none !important;
+		}
+	}
+	if removeCreatorStudio {
+		ytd-guide-renderer #sections ytd-guide-entry-renderer:has(a[title='Creator Studio']) {
+			display: none !important;
+		}
+	}
+	if removeYTMusic {
+		ytd-guide-renderer #sections ytd-guide-entry-renderer:has(a[title='YouTube Music']) {
+			display: none !important;
+		}
+	}
+	if removeYTKids {
+		ytd-guide-renderer #sections ytd-guide-entry-renderer:has(a[title='YouTube Kids']) {
+			display: none !important;
+		}
+	}
+	if removeYTTV {
+		ytd-guide-renderer #sections ytd-guide-entry-renderer:has(a[title='YouTube TV']) {
+			display: none !important;
+		}
+	}
+	/* Settings Section */
+	if removeSettingsSection {
+		ytd-guide-renderer #sections ytd-guide-section-renderer:nth-of-type(5) {
+			display: none !important;
+		}
+	}
+	if removeSettings {
+		ytd-guide-renderer #sections ytd-guide-entry-renderer:has(a[title='Settings']) {
+			display: none !important;
+		}
+	}
+	if removeReportHistory {
+		ytd-guide-renderer #sections ytd-guide-entry-renderer:has(a[title='Report history']) {
+			display: none !important;
+		}
+	}
+	if removeHelp {
+		ytd-guide-renderer #sections ytd-guide-entry-renderer:has(a[title='Help']) {
+			display: none !important;
+		}
+	}
+	if removeSendFeedback {
+		ytd-guide-renderer #sections ytd-guide-entry-renderer:has(a[title='Send feedback']) {
+			display: none !important;
+		}
+	}
+	/* Settings Section */
+	if removeAboutSection {
+		ytd-guide-renderer #footer {
+			display: none !important;
+		}
+	}
 }
-
 
 /********************************************************************************************************************************************************************************/
 
-
 /*                                                                                                                                                                              */
-
 
 /*     MMMMMMMM               MMMMMMMM   iiii                     hhhhhhh              FFFFFFFFFFFFFFFFFFFFFF                            tttt                                   */
 
-
 /*     M:::::::M             M:::::::M  i::::i                    h:::::h              F::::::::::::::::::::F                         ttt:::t                                   */
-
 
 /*     M::::::::M           M::::::::M   iiii                     h:::::h              F::::::::::::::::::::F                         t:::::t                                   */
 
-
 /*     M:::::::::M         M:::::::::M                            h:::::h              FF::::::FFFFFFFFF::::F                         t:::::t                                   */
-
 
 /*     M::::::::::M       M::::::::::M iiiiiii    aaaaaaaaaaaaa    h::::h hhhhh          F:::::F       FFFFFF uuuuuu    uuuuuu  ttttttt:::::ttttttt       aaaaaaaaaaaaa         */
 
-
 /*     M:::::::::::M     M:::::::::::M i:::::i    a::::::::::::a   h::::hh:::::hhh       F:::::F              u::::u    u::::u  t:::::::::::::::::t       a::::::::::::a        */
-
 
 /*     M:::::::M::::M   M::::M:::::::M  i::::i    aaaaaaaaa:::::a  h::::::::::::::hh     F::::::FFFFFFFFFF    u::::u    u::::u  t:::::::::::::::::t       aaaaaaaaa:::::a       */
 
-
 /*     M::::::M M::::M M::::M M::::::M  i::::i             a::::a  h:::::::hhh::::::h    F:::::::::::::::F    u::::u    u::::u  tttttt:::::::tttttt                a::::a       */
-
 
 /*     M::::::M  M::::M::::M  M::::::M  i::::i      aaaaaaa:::::a  h::::::h   h::::::h   F:::::::::::::::F    u::::u    u::::u        t:::::t               aaaaaaa:::::a       */
 
-
 /*     M::::::M   M:::::::M   M::::::M  i::::i    aa::::::::::::a  h:::::h     h:::::h   F::::::FFFFFFFFFF    u::::u    u::::u        t:::::t             aa::::::::::::a       */
-
 
 /*     M::::::M    M:::::M    M::::::M  i::::i   a::::aaaa::::::a  h:::::h     h:::::h   F:::::F              u::::u    u::::u        t:::::t            a::::aaaa::::::a       */
 
-
 /*     M::::::M     MMMMM     M::::::M  i::::i  a::::a    a:::::a  h:::::h     h:::::h   F:::::F              u:::::uuuu:::::u        t:::::t    tttttt a::::a    a:::::a       */
-
 
 /*     M::::::M               M::::::M i::::::i a::::a    a:::::a  h:::::h     h:::::h FF:::::::FF            u:::::::::::::::uu      t::::::tttt:::::t a::::a    a:::::a       */
 
-
 /*     M::::::M               M::::::M i::::::i a:::::aaaa::::::a  h:::::h     h:::::h F::::::::FF             u:::::::::::::::u      tt::::::::::::::t a:::::aaaa::::::a       */
-
 
 /*     M::::::M               M::::::M i::::::i  a::::::::::aa:::a h:::::h     h:::::h F::::::::FF              uu::::::::uu:::u        tt:::::::::::tt  a::::::::::aa:::a      */
 
-
 /*     MMMMMMMM               MMMMMMMM iiiiiiii   aaaaaaaaaa  aaaa hhhhhhh     hhhhhhh FFFFFFFFFFF                uuuuuuuu  uuuu          ttttttttttt     aaaaaaaaaa  aaaa      */
 
-
 /*                                                                                                                                                                              */
-
 
 /********************************************************************************************************************************************************************************/
 
-
 /*                                                                                                                                                                              */
-
 
 /*                                                                          © MiahFuta Inc. 2022 All Rights Reserved.                                                           */
 
-
 /*                                                                                                                                                                              */
-
 
 /********************************************************************************************************************************************************************************/
